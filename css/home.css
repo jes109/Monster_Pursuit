@@ -1,0 +1,216 @@
+/*font*/
+@font-face {
+    font-family: jf;
+    src: url(../font/jf-openhuninn-2.0.ttf);
+}
+@font-face {
+    font-family:gensenrounded ;
+    src: url(../font/GenSenRounded-R.ttc);
+}
+/*body*/
+body{
+    background-color: black;
+    text-align: center;
+}
+html{
+    box-sizing: border-box;
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+/*header*/
+header{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom:2px solid #FFB800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width:150px;
+}
+.nav{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav_li{
+    width: 10em;
+}
+.nav_item{ 
+    font-size: 20px;
+    font-family: gensenrounded;
+    list-style:none;
+    color: #FFB800;
+    padding: 5px 10px;
+    text-decoration: none;
+    border:1.5px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.nav_item:hover{
+    border-color: #0FF;
+}
+/*.nav_item:hover{
+    opacity: 50%;
+}*/
+/*main*/
+main{
+    margin-bottom: 40px;
+}
+.title{
+    font-family: jf;
+    font-size: 20px;
+    width: 100px;
+    color: #FFB800;
+    border-left:1.5px solid #0FF;;
+    border-right:1.5px solid #0FF;;
+    text-align: center;
+    margin:0 auto 25px auto;
+}
+hr{
+    border-color: #FFB800;
+    width: 50%;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.carouselcontainer{
+    display: flex;
+ }
+.carousel{
+    position:relative;
+    overflow: hidden;
+    width: 700px;
+    height: 400px;
+    border:2px solid white;
+    border-radius: 25px;
+}
+.carousel img{
+     position: absolute;
+     width: 100%;
+     top: 0;
+     left:0;
+     display:none;
+}
+.left:hover,.right:hover{
+    opacity: 50%;
+     cursor:pointer;
+}
+.dot{
+    display: flex;
+    width: 60px;
+    margin-top: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+.dot div{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.dot div:nth-child(1){
+    background-color: white;
+}
+/**/
+.preview{
+    margin-top: 25px;
+}
+.recent,.highreward{
+    padding: 20px auto;
+    margin-bottom: 40px;
+    font-family: gensenrounded ;
+    font-size: 20px;
+    color:white;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+.monsters{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+.monsters_item{
+    width: 180px;
+    font-family: gensenrounded;
+    color: white;
+}
+.monster_img{
+    width: 180px;
+    border-radius: 10px;
+}
+.monster_name{
+    text-align: center;
+    margin-top: 8px;
+}
+.dots{
+    align-self:self-end;
+    text-decoration: none;
+    color: white;
+}
+.more{
+    text-align: center;
+    line-height: 200%;
+}
+.knowmore{
+    margin:0;
+    font-family: gensenrounded;
+    color:#0FF;
+    font-size: 20px;
+}
+.monster_doc{
+    font-family: gensenrounded;
+    color:#0FF;
+    font-size: 20px;
+    text-decoration: none;
+}
+.monster_doc:hover{
+    opacity:50%;
+}
+.dots:hover{
+    opacity: 50%;
+}
+.doudledown{
+    width:25px;
+}
+/*footer*/
+footer{
+    background-color: #FFB800;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 52px;
+}
+.contact{
+    text-align: start;
+}
+.contact_icon{
+    width: 37px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.contact_icon:hover{
+    opacity: 50%;
+}
+.mail{
+    color:black;
+    font-family: gensenrounded;
+    margin:0;
+}
+.cr{
+    color:black;
+    font-family: gensenrounded;
+    margin:0;
+    align-self: center;
+}
